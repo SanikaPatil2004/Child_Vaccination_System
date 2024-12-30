@@ -1,0 +1,191 @@
+ /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+/* Body Styling */
+body {
+    background-color: #f4f8fc;
+    color: #333;
+}
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+
+.navbar .nav-items {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .nav-items li {
+    margin-left: 20px;
+}
+
+.navbar .nav-items a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar #languageSelect {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #2ea3f1;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero .cta-button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.hero .cta-button:hover {
+    background-color: #e6b800;
+}
+
+/* Importance Section */
+.importance {
+    padding: 40px 20px;
+    background-color: #e0f7fa;
+    text-align: center;
+}
+
+.importance h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+.importance-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.importance-item {
+    text-align: center;
+    width: 30%;
+    min-width: 250px;
+}
+
+.importance-item img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.importance-item h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.importance-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Dashboard Section */
+.dashboard {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.dashboard h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+.dashboard-items {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.dashboard-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    min-width: 250px;
+    transition: transform 0.3s;
+}
+
+.dashboard-item:hover {
+    transform: translateY(-5px);
+    background-color: #f9fcff;
+}
+
+.dashboard-item h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.dashboard-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.dashboard-item button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.dashboard-item button:hover {
+    background-color: #0056b3;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+    margin-top: 40px;
+}
+

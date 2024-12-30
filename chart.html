@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+
+    <title>Vaccination Chart</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            /* margin: 20px; */
+            background-color: #f4f4f482;
+            align-items: center;
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            margin-left: 150px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+            background-color: #fff;
+        }
+
+        th {
+            background-color: #007bff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .head {
+            color: white;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="home.php"><img id ="motherchild" src="childm.jpeg"></a></div>
+            <ul class="nav-items">
+                <li><a href="home.php">Home</a></li>
+                <li><a href="#">Schedule</a></li>
+                <!-- <li><a href="#">GrowthTracker</a></li> -->
+                <!-- <li><a href="childdetail.html">ChildDetails</a></li> -->
+                <li><a href="#">About Us</a></li>
+                <li>
+                    <select id="languageSelect">
+                        <option value="English">English</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Marathi">Marathi</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<div class="chart">
+    <table>
+        <thead>
+            <tr><h1>Baby Immunization Schedule Table (based on IAPCOI recommendations) </h1> </tr>
+    
+            <tr class="head">
+                <th>Age</th>
+                <th>Vaccine</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Birth</td>
+                <td>BCG, Hep B1, OPV</td>
+            </tr>
+            <tr>
+                <td>6 weeks</td>
+                <td>DTwP /DTaP1, Hib-1, IPV-1, Hep B2, PCV 1, Rota-1</td>
+            </tr>
+            <tr>
+                <td>10 weeks</td>
+                <td>DTwP /DTaP2, Hib-2, IPV-2, Hep B3, PCV 2, Rota-2</td>
+            </tr>
+            <tr>
+                <td>14 weeks</td>
+                <td>DTwP /DTaP3, Hib-3, IPV-3, Hep B4, PCV 3, Rota-3</td>
+            </tr>
+            <tr>
+                <td>6 Months</td>
+                <td>Influenza-1</td>
+            </tr>
+            <tr>
+                <td>7 Months</td>
+                <td>Influenza-2</td>
+            </tr>
+            <tr>
+                <td>6 – 9 Months</td>
+                <td>Typhoid Conjugate Vaccine</td>
+            </tr>
+            <tr>
+                <td>9 Months</td>
+                <td>MMR 1 (Mumps, Measles, Rubella)</td>
+            </tr>
+            <tr>
+                <td>12 Months</td>
+                <td>Hepatitis A-1</td>
+            </tr>
+            <tr>
+                <td>12 – 15 Months</td>
+                <td>PCV Booster</td>
+            </tr>
+            <tr>
+                <td>15 Months</td>
+                <td>MMR 2, Varicella</td>
+            </tr>
+            <tr>
+                <td>16 – 18 Months</td>
+                <td>DTwP /DTaP, Hib, IPV</td>
+            </tr>
+            <tr>
+                <td>18 – 19 Months</td>
+                <td>Hepatitis A-2, Varicella 2</td>
+            </tr>
+            <tr>
+                <td>4 – 6 Years</td>
+                <td>DTwP /DTaP, IPV, MMR 3</td>
+            </tr>
+            <tr>
+                <td>9 – 15 Years (Girls)</td>
+                <td>HPV (2 doses)</td>
+            </tr>
+            <tr>
+                <td>10 – 12 Years</td>
+                <td>Tdap/ Td</td>
+            </tr>
+            <tr>
+                <td>2nd, 3rd, 4th, and 5th Year</td>
+                <td>Annual Influenza Vaccine</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<footer>
+    <p>&copy; 2024 Child Vaccination System. All rights reserved.</p>
+</footer>
+<script src="home.js"></script>
+
+</body>
+</html>

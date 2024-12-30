@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    padding: 15px;
+    
+}
+
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-items li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.nav-items li a:hover {
+    background-color: #0056b3;
+}
+
+#languageSelect {
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e0f7fa;
+}
+
+.hero-image {
+    height: 500px;
+    width: 900px;
+    max-width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-top: 20px;
+    color: #007bff;
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #f1f1f1;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+}
+.box:hover{
+    position: relative;
+    background-color: #74beef;
+    animation: mover 5s 2;
+    animation: mover 1s infinite  alternate;
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+.box h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.box p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+footer {
+    margin-top: 100px;
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+}
+
+#motherchild{
+    height: 40px;
+    width: 50px;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #f8f9fa;
+    margin: 5px;
+}
+
+.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+   
+    cursor: pointer;
+}
+.form-toggle {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.form-toggle button {
+    background-color: #039be5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 20px;
+    width: 50%;
+}
+
+.form-toggle button.active {
+    background-color: #0277bd;
+}
+
+/* Popup Message Styling */
+.popup-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.popup-message .popup-message-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup-message .button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popup-message .button:hover {
+    background-color: #0056b3;
+}
+
+.popup-message.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.closemsg{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+

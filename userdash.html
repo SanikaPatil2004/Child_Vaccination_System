@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Vaccination Dashboard</title>
+    <link rel="stylesheet" href="userdash.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="home.php">
+                    <img id="motherchild" src="childm.jpeg" alt="Logo">
+                </a>
+            </div>
+            <ul class="nav-items">
+                <li><a href="home.php">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li>
+                    <select id="languageSelect">
+                        <option value="English">English</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Marathi">Marathi</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Welcome to the Child Vaccination System</h1>
+        <p>Your trusted partner in protecting your child's future through timely vaccination.</p>
+        <button onclick="window.location.href='chart.html'" class="cta-button">View Vaccine Chart</button>
+    </div>
+
+    <section class="importance">
+        <h2>Why Vaccination Matters</h2>
+        <div class="importance-content">
+            <div class="importance-item">
+                <img src="safety.png" alt="Safety">
+                <h3>Protect Your Child</h3>
+                <p>Vaccines shield your child from life-threatening diseases like polio, measles, and more.</p>
+            </div>
+            <div class="importance-item">
+                <img src="community.jpeg" alt="Community">
+                <h3>Community Immunity</h3>
+                <p>High vaccination rates protect the entire community, especially vulnerable individuals.</p>
+            </div>
+            <div class="importance-item">
+                <img src="future.jpeg" alt="Future">
+                <h3>Secure Their Future</h3>
+                <p>Healthy children grow into healthy adults. Start their journey with timely vaccinations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="dashboard">
+        <h2>Your Dashboard</h2>
+        <div class="dashboard-items">
+            <div class="dashboard-item">
+                <h3>Fill Child Details</h3>
+                <p>Provide or update your child's personal information and health records.</p>
+                <button onclick="window.location.href='childdetail.php'">Go to Child Details</button>
+            </div>
+            <div class="dashboard-item">
+                <h3>Vaccination Schedule</h3>
+                <p>Stay on top of your child's vaccination timeline with reminders.</p>
+                <button onclick="window.location.href='schedule.php'">View Schedule</button>
+            </div>
+            <div class="dashboard-item">
+                <h3>Growth Tracker</h3>
+                <p>Monitor your child's growth and development milestones over time.</p>
+                <button onclick="window.location.href='growthtracker.php'">Track Growth</button>
+            </div>
+            <div class="dashboard-item">
+                <h3>Vaccination Records</h3>
+                <p>Access your child's vaccination history and upcoming doses.</p>
+                <button onclick="window.location.href='seedetails.php'">View Records</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Child Vaccination System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

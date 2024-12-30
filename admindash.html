@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="userdash.css">
+    <link rel="stylesheet" href="home.css">
+    <style>
+        footer{
+            margin-top: 300px;
+        }
+        .dashboard{
+            margin-top: 100px;
+        }
+        h1{
+            margin-left: 400px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="admin.php"><img id ="motherchild" src="childm.jpeg"></a></div>
+            <ul class="nav-items">
+                <li><a href="admin.php">Home</a></li>
+                <li><a href="chart.html">VaccineChart</a></li>
+                <li><a href="#">About Us</a></li>
+                <li>
+                    <select id="languageSelect">
+                        <option value="English">English</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Marathi">Marathi</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="header">
+ 
+        <h1>Welcome to the Child Vaccination System</h1>
+    </div>
+
+   
+
+    <section class="dashboard">
+        <h2>Dashboard</h2>
+        <div class="dashboard-items">
+            <div class="dashboard-item" id="childDetail">
+                <h3>Add/Update Schedule</h3>
+                <p>Fill and update VAccine Schedule.</p>
+                <button onclick="window.location.href='addschedule.php'">ScheduleVaccine</button>
+            </div>
+            <div class="dashboard-item" id="schedule">
+                <h3>Vaccinate</h3>
+                <p>Vaccinate child to save their life .</p>
+                <button onclick="window.location.href='vaccinated.php'">Vaccinate</button>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Child Vaccination System. All rights reserved.</p>
+    </footer>
+
+    <script src="userdash.js"></script>
+</body>
+</html>

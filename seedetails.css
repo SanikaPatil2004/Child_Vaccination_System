@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    /* padding: 20px; */
+}
+
+h1 {
+    margin: 0;
+    margin-left: 580px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.search-form {
+    text-align: center;
+    margin: 20px;
+}
+
+.search-form input {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-form button:hover {
+    background-color: #0b70dc;
+}
+
+.table-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    /* bottom: 0; */
+    width: 100%;
+    margin-top: 700px;
+}
